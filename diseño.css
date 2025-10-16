@@ -1,0 +1,221 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        header p {
+            margin: 0 0 0 10px;
+            font-size: 1rem;
+            align-self: flex-end;
+            color: #d0e7ff;
+        }
+.banner {
+    width: 100%;
+	height: 600px;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes banner {
+	0%,
+	20% {
+		background-image: url("tienda\ de\ camisas\ jm.png");
+	}
+	25%,
+	45% {
+		background-image: url("camisa\ negra.png");
+	}
+	50%,
+	70% {
+		background-image: url("camisa\ blanca\ manga\ larga.png");
+	}
+	75%,
+	100% {
+		background-image: url("camisa\ blanca.png");
+	}
+}
+.capa {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(0, 0, 0, 0.6);
+}
+        
+        .banner img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            object-fit: cover;
+            max-height: 200px;
+        }
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .producto {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .producto img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .producto h3 {
+            margin: 10px 0 5px;
+        }
+        .precio {
+            font-weight: bold;
+            color: #0077cc;
+            margin-bottom: 10px;
+        }
+        .btn-comprar {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-comprar:hover {
+            background-color: #005fa3;
+        }
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 50px;
+        }
+        /* Responsive tweaks */
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            header p {
+                align-self: center;
+            }
+        }
+    
+    .info p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .info a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fff;
+      background: #ff6b6b;
+      border-radius: 25px;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 107, 107, 0.6);
+    }
+
+    .info a:hover {
+      background: #1dd1a1;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(29, 209, 161, 0.8);
+    }
+    .info h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff6b6b; /* Color base */
+  text-shadow: 
+    0 0 10px #ff6b6b,
+    0 0 20px #48dbfb,
+    0 0 40px #1dd1a1,
+    0 0 60px #feca57;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  justify-content: center; /* Centra horizontal */
+  align-items: center;     /* Centra vertical */
+  text-align: center;      /* Centra el texto dentro */
+  background: #222;        /* Fondo de prueba */
+  color: #fff;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* oscurece */
+  z-index: 1;
+}
+
+a{
+    display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fff;
+      background: #ff6b6b;
+      border-radius: 25px;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 107, 107, 0.6);
+      text-align: center;
+
+}
